@@ -136,6 +136,15 @@ const REQUIRED_KEYS = [
             }
         }
 
+        if (data.nutrition) {
+            mdFile.write(`\n## Nutrition\n\n`)
+            mdFile.write(`| Nutrition | Amount |\n`);
+            mdFile.write(`| --------- | -----: |\n`);
+            for (const itm of data.nutrition) {
+                mdFile.write(`| ${itm.name} | ${itm.amount}|\n`)
+            }
+        }
+
         // Sources
         mdFile.write(`\n## Sources\n\n`);
         for (const source of data.sources || []) {
