@@ -100,6 +100,17 @@ const REQUIRED_KEYS = [
         mdFile.write(`${data.description}\n`);
         if (images.includes('header.jpg')) {
         mdFile.write(`![${data.title} header image](images/${recipeName}/header.jpg)`)}
+        // Prep, cook, and cool times
+        if (data.times) {
+            let totalTime = 0;
+            Object.keys(data.times).forEach(time => {
+                const caps = time.charAt(0).toUpperCase() + time.slice(1);
+                mdFile.write(`- ${caps} time: ${data.times[time]} minutes\n`);
+                totalTime += data.times[time];
+            });
+
+            mdFile.write(`- Total time: ${totalTime} minutes\n\n`);
+        }
 
         // Ingredients
         mdFile.write(`\n## Ingredients\n\n`);
