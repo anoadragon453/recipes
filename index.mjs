@@ -38,6 +38,11 @@ const REQUIRED_KEYS = [
 
     // Iterate over all recipes
     for (const recipeName of await fs.promises.readdir(recipeDir)) {
+        // Ignore the template recipe
+        if (recipeName === '.DS_Store' || recipeName === 'template' ) {
+            continue;
+        }
+
         // Get the name of the directory
         const outFileName = path.join(outDir, `${recipeName}.md`);
         const recipeFilePath = path.join(recipeDir, recipeName, 'recipe.yml');
