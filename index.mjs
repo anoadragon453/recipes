@@ -113,9 +113,14 @@ const REQUIRED_KEYS = [
         }
 
         // Ingredients
-        mdFile.write(`\n## Ingredients\n\n`);
+        mdFile.write(`## Ingredients\n\n`);
+        mdFile.write(`Serves ${data.servings}\n\n`)
+        mdFile.write(`| Amount | Ingredient | Comment |\n`)
+        mdFile.write(`| -----: | ---------- | ------- |\n`)
         for (const ingredient of data.ingredients) {
-            mdFile.write(`- ${ingredient.amount} ${ingredient.unit} ${ingredient.name}\n`);
+            // Writes - "1 Eggs" or "10 ml Milk" depending on if unit is set or not
+            // mdFile.write(`- ${ingredient.amount} ${(ingredient.unit) || ''} ${ingredient.name}\n`);
+            mdFile.write(`| ${ingredient.amount} ${(ingredient.unit) || ''} | ${ingredient.name} | ${(ingredient.comment) || ''} |\n`)
         }
 
         // Steps
