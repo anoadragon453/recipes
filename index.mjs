@@ -68,25 +68,24 @@ const REQUIRED_KEYS = [
 
         // Symlink images to src directory
         const files = fs.readdirSync(path.join(recipeDir, recipeName));
+        const linkImageDir = path.resolve(path.join(outDir, 'images', recipeName));
         const images = [];
+
+        // Delete and recreate recipe image directory
+        try {
+            fs.rmdirSync(linkImageDir, { recursive: true });
+        } catch(_) {};
+        fs.mkdirSync(linkImageDir);
+
         files.forEach(file => {
             if (file.endsWith('.jpg')) {
-                const linkImageDir = path.resolve(path.join(outDir, 'images', recipeName));
                 const linkSrc = path.resolve(path.join(recipeDir, recipeName, file));
-                const linkDst = path.resolve(path.join(outDir, 'images', recipeName, file))
-
-                // Delete and recreate recipe image directory
-                try {
-                    fs.rmdirSync(linkImageDir, { recursive: true });
-                } catch(_) {};
-                fs.mkdirSync(linkImageDir);
-                
-                // Delete the symlink if it exists
-                try {                  
-                    fs.unlinkSync(linkDst);
-                } catch (_) {};
+                const linkDst = path.resolve(path.join(linkImageDir, file))
 
                 // Symlink the image from the recipe directory to src
+                try {
+                    fs.unlinkSync(linkDst);
+                } catch (_) {};
                 fs.symlinkSync(linkSrc, linkDst);
 
                 images.push(file);
@@ -97,9 +96,13 @@ const REQUIRED_KEYS = [
 
         // Recipe header and description
         mdFile.write(`# ${data.title}\n\n`);
-        mdFile.write(`${data.description}\n`);
-        if (images.includes('header.jpg')) {
-        mdFile.write(`![${data.title} header image](images/${recipeName}/header.jpg)`)}
+        mdFile.write(`${data.description.trim()}\n\n`);
+
+                // Header image
+                if (images.includes('header.jpg')) {
+                    mdFile.write(`![${data.title} header image](images/${recipeName}/header.jpg)\n\n`)
+                }
+
         // Prep, cook, and cool times
         if (data.times) {
             let totalTime = 0;
