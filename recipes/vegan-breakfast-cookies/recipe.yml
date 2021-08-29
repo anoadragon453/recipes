@@ -10,6 +10,7 @@ sources:
   - https://rainbowplantlife.com/healthy-vegan-breakfast-cookies/
 
 category: Breakfast
+sub_category: Vegan
 
 times:
   prep: 30
@@ -23,9 +24,10 @@ ingredients:
   - name: Ground Flaxseed Meal
     amount: 2
     unit: tbs
-  - name: Rolled Oats (certified gluten-free, as needed)
+  - name: Rolled Oats
     amount: 2
     unit: cups
+    comment: Certified gluten-free, as needed
   - name: Shredded Coconut
     amount: 0.5
     unit: cups
@@ -38,9 +40,10 @@ ingredients:
   - name: Fine Sea Salt
     amount: 0.5
     unit: tsp
-  - name: Smooth, Creamy Variety of Almond Butter (can substitute Cashew Butter)
+  - name: Smooth, Creamy Variety of Almond Butter
     amount: 0.75
     unit: cups
+    comment: Can substitute Cashew Butter
   - name: Pure Maple Syrup
     amount: 0.5
     unit: cups
@@ -53,9 +56,10 @@ ingredients:
   - name: Pepitas and/or Sunflower Seeds, chopped
     amount: 0.5
     unit: cups
-  - name: Hemp Seeds (aka Hemp Hearts)
+  - name: Hemp Seeds
     amount: 0.33
     unit: cups
+    comment: aka Hemp Hearts
 
 steps:
   - step: Prepare the flax eggs. Combine the ground flaxseed meal with 5 tablespoons water. Stir and let sit for 15 minutes to gel together.
@@ -65,12 +69,10 @@ steps:
   - step: "In a medium bowl, mix together the wet ingredients: almond butter, maple syrup, vanilla, and prepared flax eggs. Whisk until smooth and thick."
   - step: Pour the wet mixture into the dry ingredients, using a silicone spatula to mix everything until the mixture resembles a cookie dough. Fold in your desired mix-ins (dried fruit, pumpkin/sunflower seeds, and hemp seeds) using the spatula.
   - step: If the dough is too sticky to handle, refrigerate it for 10-15 minutes to firm up slightly.
-    time: 10-15
     time_min: 10
     time_max: 15
   - step: Use an ice cream scoop or large spoon to scoop about 3 tablespoons of dough onto the prepared baking sheet, spacing them about 1/2 inch apart. Alternatively, measure out 3 tablespoons and shape the dough into a round using your hands. Lightly flatten the top of each cookie with your hands or a fork.
   - step: Bake the cookies for about 18-20 minutes.
-    time: 18-20
     time_min: 18
     time_max: 20
   - step: Cool for 5 minutes. Use a spatula to carefully transfer them to a cooling rack. Store leftover cookies in an airtight container on the counter for 5 to 7 days.

@@ -3,7 +3,9 @@
   "version": "1.0.0",
   "main": "index.mjs",
   "scripts": {
-    "build": "node index.mjs"
+    "build": "node index.mjs",
+    "dev": "node index.mjs && mdbook build",
+    "start": "mdbook serve"
   },
   "repository": "git@github.com:Half-Shot/recipies.git",
   "author": "Will Hunt <willh@matrix.org>",
