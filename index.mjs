@@ -52,7 +52,6 @@ const REQUIRED_KEYS = [
         // Get the name of the directory
         const outFileName = path.join(outDir, `${recipeName}.md`);
         const recipeFilePath = path.join(recipeDir, recipeName, 'recipe.yml');
-        // console.log(`Generating ${recipeName} > ${outFileName}`);
         
         // Read recipe file and open out file
         const data = yaml.load(await fs.promises.readFile(recipeFilePath));
@@ -115,7 +114,7 @@ const REQUIRED_KEYS = [
             mdFile.write(`1. ${step.step}${time}`);
 
             if (step.image) {
-                mdFile.write(`  \n![Step image ${step.image.replace('.jpg', '')}](images/${recipeName}/${step.image})\n`)
+                mdFile.write(`  \n    ![Step image ${step.image.replace('.jpg', '')}](images/${recipeName}/${step.image})\n`)
             } else {
                 mdFile.write('\n');
             }
