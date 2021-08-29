@@ -1,0 +1,51 @@
+# Documentation for possible options in this file is at
+# https://rust-lang.github.io/mdBook/format/config.html
+[book]
+title = "anoa & Twilys recipes"
+authors = [
+    "anoa",
+    "Twilight Sparkle",
+]
+description = "anoa & Twilys recipes"
+language = "en"
+multilingual = false
+
+# The directory that documentation files are stored in
+src = "src"
+
+[build]
+# Prevent markdown pages from being automatically generated when they're
+# linked to in SUMMARY.md
+create-missing = false
+
+[output.html]
+# The URL visitors will be directed to when they try to edit a page
+edit-url-template = "https://github.com/Twi1ightSparkle/recipess/edit/main/{path}"
+
+# The source code URL of the repository
+git-repository-url = "https://github.com/Twi1ightSparkle/recipess"
+
+
+# Additional HTML, JS, CSS that's injected into each page of the book.
+# Table of contents is via https://github.com/JorelAli/mdBook-pagetoc
+additional-css = [
+    "src/book-assets/element-theme.css",
+    "src/book-assets/font.css",
+    "src/book-assets/remove-nav-buttons.css",
+    "src/book-assets/style.css",
+]
+additional-js = ["src/book-assets/sidebar.js"]
+theme = "src/book-assets/theme"
+default-theme = "navy"
+
+# 404 page
+input-404 = "404.md"
+
+# Do not add numbers to each link in the left-hand column
+no-section-label = true
+
+# The CNAME to use for GitHub pages
+#cname = "ems-docs.element.io"
+
+# Font settings
+copy-fonts = false

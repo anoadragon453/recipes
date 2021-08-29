@@ -1,1 +1,9 @@
+.DS_Store
+book
 node_modules
+
+src/images/*
+!src/images/404.png
+src/*.md
+!src/404.md
+!src/index.md
