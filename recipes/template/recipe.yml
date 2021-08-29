@@ -1,0 +1,45 @@
+title: Template recipe
+
+description: >
+  A short description for the recipe
+
+# To place an image below the description in the recipe,
+# add a file named header.jpg in the recipe directory
+
+sources: # One or more supported. Remove section if none
+  - https://example.com/template
+
+# Category must be one of Breakfast, Lunch, Dinner, or Snacks
+category: Dinner
+sub_category: Fish # Can be anything
+
+times: # In minutes
+  prep: 30
+  cook: 25
+  chill: 5
+
+# TODO: Always do servings for 1 person so it can be calculated
+servings: 4
+
+ingredients:
+  - name: Flour
+    amount: 2
+    unit: tbs
+  - name: Milk
+    amount: 100
+    unit: ml
+  - name: Eggs
+    amount: 1 # unit is only required where it makes sense
+  - name: Baking Powder
+    amount: 0.5 # Always use decimals
+    unit: tsp
+
+steps:
+  - step: Step 1
+    time: 15 # time in minutes
+  - step: Step 2. Time is optional
+  - step: Step 3. Time can be given in a range time_min - time_max instead
+    time_min: 10
+    time_max: 15
+  - step: Step 4. Optionally add an image for this step. File can be named anything. Must be .jpg and stored in the directory for this recipe. This is also how you do a multi-line step.
+    image: step4.jpg
