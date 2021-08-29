@@ -16,21 +16,21 @@ const REQUIRED_KEYS = [
 ];
 
 
-/**
- * 
- * @param {Object} unordered    Sort an object alphabetically by key
- * @returns {Object}            The object sorted
-*/
-function sortObject(unordered) {
-    const ordered = Object.keys(unordered).sort().reduce(
-        (obj, key) => { 
-            obj[key] = unordered[key]; 
-            return obj;
-        }, 
-        {}
-    );
-    return ordered;
-}
+// /**
+//  * 
+//  * @param {Object} unordered    Sort an object alphabetically by key
+//  * @returns {Object}            The object sorted
+// */
+// function sortObject(unordered) {
+//     const ordered = Object.keys(unordered).sort().reduce(
+//         (obj, key) => { 
+//             obj[key] = unordered[key]; 
+//             return obj;
+//         }, 
+//         {}
+//     );
+//     return ordered;
+// }
 
 
 (async() => {
@@ -119,11 +119,17 @@ function sortObject(unordered) {
         mdFile.close();
     }
 
-    // Order summary and each category alphabetically
-    summary = sortObject(summary);
-    Object.keys(summary).forEach(key => {
-        summary[key] = sortObject(summary[key]);
-    })
+    // Order children of each category
+    // Object.keys(summary).forEach(category => {
+    //     console.log(summary[category]);
+    //     category = sortObject(summary[category]);
+    //     console.log(summary[category]);
+
+    //     // Order children of each sub_category
+    //     Object.keys(category).forEach(sub_category => {
+    //         category[sub_category] = sortObject(category[sub_category]);
+    //     });
+    // })
 
     // Write SUMMARY.md
     const summaryFilePath = path.join(outDir, 'SUMMARY.md');
