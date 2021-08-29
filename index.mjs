@@ -146,9 +146,11 @@ const REQUIRED_KEYS = [
         }
 
         // Sources
-        mdFile.write(`\n## Sources\n\n`);
-        for (const source of data.sources || []) {
-            mdFile.write(`- <${source}>\n`);
+        if (data.sources) {
+            mdFile.write(`\n## Sources\n\n`);
+            for (const source of data.sources) {
+                mdFile.write(`- <${source}>\n`);
+            }
         }
 
         mdFile.close();
