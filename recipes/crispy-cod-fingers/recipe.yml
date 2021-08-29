@@ -24,7 +24,7 @@ ingredients:
   - name: Sweet potatoes
     amount: 700
     unit: gr
-    comment: 3 large
+    comment: 3 large. Scrubbed and cut into wedges
   - name: Sunflower oil
     amount: 0.5
     unit: tbsp
@@ -32,7 +32,7 @@ ingredients:
     amount: 0.25
   - name: Red onion
     amount: 0.5
-    comment: finely sliced
+    comment: Finely sliced
   - name: Cornichons
     amount: 6
     comment: Large, quartered
