@@ -12,6 +12,7 @@ const REQUIRED_KEYS = [
     'description',
     'ingredients',
     'steps',
+    'sub_category',
     'title',
 ];
 
@@ -34,7 +35,12 @@ const REQUIRED_KEYS = [
 
 
 (async() => {
-    let summary = {};
+    let summary = {
+        'Breakfast': {},
+        'Lunch': {},
+        'Dinner': {},
+        'Snacks': {},
+    };
 
     // Iterate over all recipes
     for (const recipeName of await fs.promises.readdir(recipeDir)) {
@@ -56,10 +62,10 @@ const REQUIRED_KEYS = [
         REQUIRED_KEYS.forEach(key => assert.ok(data[key]));
 
         // Save to summary Object
-        if (!(data.category in summary)) {
-            summary[data.category] = [];
+        if (!(data.sub_category in summary[data.category])) {
+            summary[data.category][data.sub_category] = {};
         }
-        summary[data.category].push({'name': recipeName, 'title': data.title});
+        summary[data.category][data.sub_category][recipeName] = data.title;
 
         // Symlink images to src directory
         const files = fs.readdirSync(path.join(recipeDir, recipeName));
@@ -144,13 +150,22 @@ const REQUIRED_KEYS = [
     // For each category
     Object.keys(summary).forEach(category => {
         const cat = summary[category];
+
+        // Skip empty categories
+        if (Object.entries(cat).length > 0) {
         summaryFile.write(`\n# ${category}\n\n`)
 
-        // For each recipe in the category
-        Object.keys(cat).forEach(recipe => {
-            const res = cat[recipe];
-            summaryFile.write(`- [${res.title}](${res.name}.md)\n`)
-        });
+            // For each sub category
+            Object.keys(cat).forEach(sub_category => {
+                const sub = cat[sub_category];
+                summaryFile.write(`- [${sub_category}]()\n`)
+
+                // For each recipe in the category
+                Object.keys(sub).forEach(recipe => {
+                    summaryFile.write(`  - [${sub[recipe]}](${recipe}.md)\n`)
+                });
+            });
+        }
     });
 
     summaryFile.close();
