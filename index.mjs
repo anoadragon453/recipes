@@ -129,7 +129,13 @@ const REQUIRED_KEYS = [
         // Steps
         mdFile.write(`\n## Steps\n\n`);
         for (const step of data.steps) {
-            const time = step.time ? ` (${step.time})` : '';
+            let time = '';
+            if (step.time) {
+                time = ` (${step.time} minutes)`
+            }
+            else if (step.time_min && step.time_max) {
+                time = ` ${step.time_min} - ${step.time_max} minutes)`
+            }
             mdFile.write(`1. ${step.step}${time}`);
 
             if (step.image) {
