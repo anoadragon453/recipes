@@ -1,0 +1,71 @@
+title: Taco
+
+description: >
+  Delicious taco
+
+# To place an image below the description in the recipe,
+# add a file named header.jpg in the recipe directory
+
+category: Dinner
+sub_category: Mexican
+
+# TODO: Always do servings for 1 person so it can be calculated
+servings: 4
+
+ingredients:
+  - name: Tortillas and/or taco shells
+    amount: 8
+  - name: Minced meat
+    amount: 600
+    unit: gr
+  - name: Spice mix
+    amount: 50
+    unit: gr
+  - name: Salsa sauce
+    amount: 300
+    unit: gr
+  - name: Guacamole
+    amount: 240
+    unit: gr
+  - name: Sweet corn
+    amount: 200
+    unit: gr
+  - name: Onion
+    amount: 1
+  - name: Tomatoes
+    amount: 6
+  - name: Pineapple chunks
+    amount: 435
+    unit: gr
+  - name: Garlic
+    amount: 1
+  - name: Jalapeño
+    amount: 150
+    unit: gr
+  - name: Sun dried tomatoes
+    amount: 100
+    unit : gr
+    comment: Optional
+  - name: Feta cheese
+    amount: 100
+    unit: gr
+    comment: Optional
+  - name: Bell pepper
+    amount: 1
+  - name: Grated cheese
+    amount: 300
+    unit: gr
+  - name: Lettuce
+    amount: 1
+  - name: Sour cream
+    amount: 230
+    unit: gr
+
+
+steps:
+  - step: Cut all vegetables except lettuce into a large bowl. Mix well together
+  - step: Cut lettuce into it's own bowl
+  - step: Fry the minced meat until no longer brown
+  - step: Add the spice mix and water according to the packaging. Cook until almost dry
+  - step: Prepare tortillas or shells according to the packaging.
+  - step: Serve with grated cheese
