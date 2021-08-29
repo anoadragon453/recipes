@@ -45,7 +45,7 @@ input-404 = "404.md"
 no-section-label = true
 
 # The CNAME to use for GitHub pages
-#cname = "ems-docs.element.io"
+cname = "recipes.amorgan.xyz"
 
 # Font settings
 copy-fonts = false
