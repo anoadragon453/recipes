@@ -48,6 +48,9 @@ ingredients:
   - name: Chillies
     amount: 1
     unit: ml
+  - name: Spinach
+    amount: 1
+    unit: ml
 
 steps:
   - step: Cook the vegetables in a little oil, cumin and salt until just a little soft. Set aside
