@@ -115,6 +115,13 @@ const REQUIRED_KEYS = [
             mdFile.write(`- Total time: ${totalTime} minutes\n\n`);
         }
 
+        if (data.allergens) {
+            mdFile.write('## Allergens\n\n');
+            data.allergens.forEach(allergen => {
+                mdFile.write(`- ${allergen}\n`);
+            });
+        }
+
         // Ingredients
         mdFile.write(`## Ingredients\n\n`);
         mdFile.write(`Serves ${data.servings}\n\n`)
@@ -134,7 +141,7 @@ const REQUIRED_KEYS = [
                 time = ` (${step.time} minutes)`
             }
             else if (step.time_min && step.time_max) {
-                time = ` ${step.time_min} - ${step.time_max} minutes)`
+                time = ` (${step.time_min} - ${step.time_max} minutes)`
             }
             mdFile.write(`1. ${step.step}${time}`);
 
