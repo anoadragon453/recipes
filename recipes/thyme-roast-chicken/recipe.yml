@@ -1,0 +1,95 @@
+title: Thyme Roast Chicken
+
+description: >
+  With Roast Veggies and Sweet Chilli Sauce. This Thyme Roast Chicken with Roast Veggies is bursting full of flavours and make the perfect dinner night option, from HelloFresh. Cook up a fresh start!
+
+sources:
+  - https://www.hellofresh.co.uk/recipes/thyme-roast-chicken-5fd75e66a608a0561c026f48/
+
+category: Dinner
+sub_category: Chicken
+
+times:
+  prep: 40
+
+# TODO: Always do servings for 1 person so it can be calculated
+servings: 4
+
+ingredients:
+  - name: Potatoes
+    amount: 900
+    unit: gr
+  - name: Carrots
+    amount: 4
+  - name: Flat leaf parsley
+    amount: 1
+    unit: bunch
+  - name: Dried thyme
+    amount: 2
+    unit: sachets
+  - name: Fresh chilli jam
+    amount: 50
+    unit: gr
+  - name: Red onion
+    amount: 2
+  - name: Bell pepper
+    amount: 2
+  - name: Chicken breasts
+    amount: 4
+  - name: Chicken stock paste
+    amount: 22
+    unit: gr
+  - name: Water
+    amount: 200
+    unit: ml
+
+allergens:
+  - Celery
+
+nutrition: 
+  - name: Energy
+    amount: 1900 kJ
+  - name: Energy
+    amount: 454 kcal
+  - name: Fat
+    amount: 4.0 g
+  - name: of which saturates
+    amount: 1.0 g
+  - name: Carbohydrate
+    amount: 61 g
+  - name: of which sugars
+    amount: 18.0 g
+  - name: Protein
+    amount: 46 g
+  - name: Salt
+    amount: 0.96 g
+
+steps:
+  - step: Preheat your oven to 200°C
+  - step: Chop the potatoes into 2cm wide wedges (no need to peel!). Pop the wedges on a large baking tray in a single layer. Drizzle with oil, then season with salt and pepper
+  - ste: Toss to coat, then spread out and roast on the top shelf of your oven until golden. Turn halfway through cooking
+    time_min: 30
+    time_max: 35
+    image: 1.jpg
+  - step: Halve, peel and chop the red onion into 6 wedges
+  - step: Trim the carrot (no need to peel), quarter lengthways and then chop into roughly 5cm long batons
+  - step: Halve the pepper, remove the core and slice into 1cm wide strips
+  - step: Roughly chop the parsley (stalks and all)
+    image: 2.jpg
+  - step: "Put the chicken in a bowl with a glug of oil and half the dried thyme. Season with salt and pepper. Massage the seasoning into your chicken. IMPORTANT: Wash your hands after handling raw meat"
+  - step: Pop the red onion, carrot and pepper on a baking tray. Sprinkle on the remaining dried thyme, add a glug of oil and season with salt and pepper. Toss to coat the veggies
+  - step: Roast in your oven until soft and golden
+    time_min: 25
+    time_max: 30
+    image: 3.jpg
+  - step: Heat a frying pan on high heat (no oil). Lay in the chicken breasts and cook until browned on both sides, 2-3 mins each side
+  - step: "Once browned, transfer to your baking tray on top of the veggies and cook for the remaining 15-20 mins. Important: The chicken is cooked when no longer pink in the middle. Don't wash your pan - you need it again in a minute"
+  - step: Whilst the chicken is roasting, add the chicken stock powder and water to the chicken frying pan, bring to a boil then reduce the heat to a simmer
+  - step: Add the chilli jam and bubble the mixture until thickened, 3-4 mins. Season with salt and pepper
+    image: 4.jpg
+  - step: Once cooked, remove the chicken, veg and wedges from your oven
+  - step: Slice each chicken breast into five slices
+  - step: Combine the wedges, vegetables and chopped parsley together on one of the baking trays, then spoon onto plates
+  - step: Arrange the chicken on top and reheat the sweet chilli glaze if needed
+  - step: Spoon the sweet chilli glaze over the chicken and enjoy
+    image: 6.jpg
