@@ -17,25 +17,24 @@ ingredients:
     amount: 1
     comment: Diced
   - name: Ginger Paste
-    amount: 1
-    unit: ml
+    amount: 100
+    unit: gr
   - name: 1-2 cloves garlic
-    amount: 1
-    unit: tbs
+    amount: 2
   - name: Cumin
-    amount: 1
+    amount: 0.5
     unit: tsp
   - name: Curry Paste
-    amount: 283
+    amount: 100
     unit: gr
   - name: Rice
-    amount: 300
+    amount: 200
     unit: gr
   - name: Yogurt
-    amount: 1
-    unit: ml
+    amount: 500
+    unit: gr
   - name: Fresh Coriander 
-    amount: 2
+    amount: 1
     unit: tsp
   - name: Vegetable Stock
     amount: 28
@@ -44,13 +43,13 @@ ingredients:
     amount: 200
     unit: gr
   - name: Chillies
-    amount: 1
+    amount: 0.5
     unit: tsp
   - name: Spinach
     amount: 125
     unit: gr
   - name: Salt
-    amount: 0.5
+    amount: 0.25
     unit: tsp
 
 steps:
