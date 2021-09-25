@@ -67,7 +67,7 @@ nutrition:
 steps:
   - step: Preheat your oven to 200°C
   - step: Chop the potatoes into 2cm wide wedges (no need to peel!). Pop the wedges on a large baking tray in a single layer. Drizzle with oil, then season with salt and pepper
-  - ste: Toss to coat, then spread out and roast on the top shelf of your oven until golden. Turn halfway through cooking
+  - step: Toss to coat, then spread out and roast on the top shelf of your oven until golden. Turn halfway through cooking
     time_min: 30
     time_max: 35
     image: 1.jpg
