@@ -1,0 +1,89 @@
+title: Quick Mexican Rice
+
+description: >
+  This Quick Mexican Brown Rice is the perfect side dish that goes with everything from tacos, enchiladas, refried beans – you name it! This dish can be frozen beforehand in order to easily throw it in with anything else.
+
+sources:
+  - https://www.skinnytaste.com/quick-mexican-brown-rice/
+
+category: Side
+sub_category: Mexican
+
+times:
+  prep: 40
+
+# TODO: Always do servings for 1 person so it can be calculated
+servings: 4
+
+ingredients:
+  - name: Brown rice
+    amount: 2
+    unit: cups
+  - name: Cooking oil
+    amount: 1
+    unit: tsp
+  - name: Medium-sized onion, finely diced
+    amount: 1/2
+  - name: Medium-sized tomatoes
+    amount: 2
+  - name: Fresh chilli jam
+    amount: 50
+    unit: ml
+  - name: Jalapeno, seeds removed
+    amount: 1
+  - name: Garlic cloves, minced
+    amount: 2
+  - name: Tomato paste/passata
+    amount: 2
+    unit: tbsp
+  - name: Cumin
+    amount: 1/4
+    unit: tsp
+  - name: Smoked paprika
+    amount: 1/4
+    unit: tsp
+  - name: Cayenne pepper
+    amount: 1/4
+    unit: tsp
+  - name: Salt
+    amount: 1
+    unit: tsp
+  - name: Black pepper
+    amount: 1
+    unit: tsp
+  - name: Lime
+    amount: 1
+  - name: Cilantro (optional)
+    amount: 1
+    unit: small handful
+
+allergens:
+  - Cilantro
+
+nutrition: 
+  - name: Calories
+    amount: 200 kcal
+  - name: Carbohydrates
+    amount: 39 g
+  - name: Protein
+    amount: 5.0 g
+  - name: Cholesterol
+    amount: 17 mg
+  - name: Sodium
+    amount: 234 mg
+  - name: Fiber
+    amount: 3 g
+  - name: Sugar
+    amount: 2 g
+
+steps:
+  - step: Cook the rice. In a rice cooker, this can take anywhere from 25-30m, so plan accordingly if you are preparing another dish in parallel.
+  - step: Heat the oil in a large skillet over medium-high heat. Once the oil is hot, add the onions, tomatoes and jalapeno and sauté (frequently stir) until just tender, about 2-3 minutes.
+    time_min: 2
+    time_max: 3
+  - step: Add garlic and sauté.
+    time: 1
+  - step: Add the tomato paste, cumin, paprika, cayenne, salt and pepper.  Stir to evenly coat the vegetables.
+  - step: Add the cooked rice, stir, and cook until heated through.
+    time: 1
+  - step: Serve with cilantro and lime wedges on the side.
