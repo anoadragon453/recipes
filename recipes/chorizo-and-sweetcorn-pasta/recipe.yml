@@ -1,0 +1,72 @@
+title: Speedy Creamy Chorizo & Sweetcorn Pasta
+
+description: >
+  Tasty, quick, creamy pasta recipe. Make sure not to overdo the corn, and add lots
+  of chorizo!
+
+sources:
+  - https://www.hellofresh.co.uk/recipes/speedy-creamy-chorizo-sweetcorn-pasta-5f918b2763b3324ad633131d/
+
+category: Dinner
+sub_category: Pasta
+
+times:
+  prep: 5
+  cook: 15
+  chill: 0
+
+# TODO: Always do servings for 1 person so it can be calculated
+servings: 4
+
+ingredients:
+  - name: Rigatoni Pasta
+    amount: 360
+    unit: g
+  - name: Sweetcorn
+    amount: 326
+    unit: g
+  - name: Echalion Shallot
+    amount: 2
+  - name: Garlic Clove
+    amount: 2
+  - name: Chorizo
+    amount: 180
+    unit: g
+  - name: Baby Spinach
+    amount: 200
+    unit: g
+  - name: Creme Fraiche
+    amount: 200
+    unit: g
+  - name: Water for the sauce
+    amount: 100
+    unit: ml
+  - name: Grated Hard Italian Style Cheese
+    amount: 80
+    unit: g
+    comment: Can be replaced with chedder.
+
+steps:
+  - step: Boil water in a large pot and add 1/4 tsp of salt. Once boiling, throw in the rigatoni and cook. Once cooked, drain.
+    time: 12
+  - step: Drain and rinse the sweetcorn.
+  - step: Halve, peel and thinly slice the shallot.
+  - step: Peel and grate the garlic (or use a garlic press).
+  - step: Put a large pan on high heat with no oil.
+  - step: Once the pan is hot, fry the diced chorizo and sweetcorn, stirring occasionally.
+    time_min: 4
+    time_max: 5
+  - step: Lower the pan's heat to medium and add the shallot. Cook until softened, stirring occasionally.
+    time_min: 3
+    time_max: 4
+  - step: Mix in the garlic.
+    time: 0.5
+  - step: Stir in the spinach, one handful at a time, until wilted.
+    time_min: 1
+    time_max: 3
+  - step: Add the **creme fraiche** and **water** for the sauce into the pan.
+  - step: Bring the sauce to a boil and remove from the heat.
+  - step: Mix into the sauce half the hard italian style cheese.
+  - step: Season the sauce to taste with salt and pepper.
+  - step: Add the drained pasta to the sauce and gently mix until well coated in sauce.
+  - step: Serve in large bowls with the remaining hard italian style cheese sprinkled on top.
