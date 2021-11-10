@@ -46,6 +46,11 @@ ingredients:
     unit: g
     comment: Can be replaced with chedder.
 
+allergens:
+  - Milk
+  - Egg
+  - Gluten
+
 steps:
   - step: Boil water in a large pot and add 1/4 tsp of salt. Once boiling, throw in the rigatoni and cook. Once cooked, drain.
     time: 12
