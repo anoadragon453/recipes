@@ -9,7 +9,7 @@ description: >
 sources: # One or more supported. Remove section if none
   - https://example.com/template
 
-# Category must be one of Breakfast, Lunch, Dinner, or Snacks
+# Category must be one of Breakfast, Lunch, Dinner, Side, or Snacks
 category: Dinner
 sub_category: Fish # Can be anything
 
