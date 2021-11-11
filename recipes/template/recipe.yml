@@ -34,6 +34,9 @@ ingredients:
     amount: 0.5 # Always use decimals
     unit: tsp
 
+allergens:
+  - Example # You can add any potential allergens here
+
 steps:
   - step: Step 1
     time: 15 # time in minutes
