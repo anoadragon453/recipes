@@ -40,6 +40,7 @@ const REQUIRED_KEYS = [
         'Lunch': {},
         'Dinner': {},
         'Snacks': {},
+        'Side': {},
     };
 
     // Iterate over all recipes
