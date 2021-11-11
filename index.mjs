@@ -61,6 +61,9 @@ const REQUIRED_KEYS = [
         // Ensure required sections are in the yml file
         REQUIRED_KEYS.forEach(key => assert.ok(data[key]));
 
+        // Ensure category is valid
+        assert.ok(data.category in summary, `The category '${data.category}' for recipe '${data.title}' is invalid.`);
+
         // Save to summary Object
         if (!(data.sub_category in summary[data.category])) {
             summary[data.category][data.sub_category] = {};
