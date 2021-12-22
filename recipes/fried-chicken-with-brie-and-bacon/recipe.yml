@@ -1,0 +1,65 @@
+title: Fried chicken with Brie and bacon
+
+description: >
+  Fried chicken with Brie cheese wrapped in bacon. Served with vegetables and sour cream with herbs
+
+# Category must be one of Breakfast, Lunch, Dinner, or Snacks
+category: Dinner
+sub_category: Chicken # Can be anything
+
+sources: # One or more supported. Remove section if none
+  - https://www.godt.no/oppskrift/5308/kyllingfilet-med-krydder-og-ost
+
+times: # In minutes
+  prep: 30
+
+# TODO: Always do servings for 1 person so it can be calculated
+servings: 4
+
+ingredients:
+  - name: Chicken fillets
+    amount: 4
+    comment: 1-2 per person
+  - name: Brie cheese
+    amount: 1
+  - name: Thyme
+    amount: 1
+    comment: Fresh (best) or dried. Finely chopped
+  - name: Dill
+    amount: 1
+    comment: Fresh (best) or dried. Finely chopped
+  - name: Parsley
+    amount: 1
+    comment: Fresh (best) or dried. Finely chopped
+  - name: Salt
+    amount: 1
+  - name: Pepper
+    amount: 1
+  - name: Carrots
+    amount: 3
+  - name: Red onion
+    amount: 1
+  - name: Fennel
+    amount: 3
+  - name: Heart lettuce
+    amount: 1
+  - name: Bacon
+    amount: 8
+    comment: 2-3 strips per chicken fillet
+  - name: High fat sour cream
+    amount: 1
+  - name: Lemon juice
+    amount: 1
+
+steps:
+  - step: Make the dressing. Mix lemon juice, salt, pepper, dill, and parsley into the sour cream. Amounts to taste. Set aside in the fridge
+  - step: Cut all the vegetables into cubes and set aside
+  - step: Make a cut in the chicken fillets and fill with slices of Brie cheese, salt, pepper, and thyme
+  - step: Wrap each chicken fillet in bacon
+  - step: Fry the chicken in oil or butter in a pan on medium heat until light brown
+  - step: Cover a baking dish with butter and add the chicken
+  - step: Cook on the oven at 175 - 200 degrees C
+    time_min: 10
+    time_max: 15
+  - step: Fry the vegetables in the same pan as you fried the chicken for a few minutes
+  - step: Serve the chicken and vegetables on a plate. Topped with lettuce and the dressing
