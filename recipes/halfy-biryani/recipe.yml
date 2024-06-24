@@ -13,44 +13,44 @@ sub_category: Vegan
 
 ingredients: 
   - name: Olive Oil
+  - name: Onion 
     amount: 1
-    unit: ml
-  - name: One Diced Onion 
-    amount: 1
-    unit: ml
+    comment: Diced
   - name: Ginger Paste
-    amount: 1
-    unit: ml
+    amount: 100
+    unit: gr
   - name: 1-2 cloves garlic
-    amount: 1
-    unit: ml
+    amount: 2
   - name: Cumin
-    amount: 1
-    unit: ml
+    amount: 0.5
+    unit: tsp
   - name: Curry Paste
-    amount: 1
-    unit: ml
+    amount: 100
+    unit: gr
   - name: Rice
-    amount: 1
-    unit: ml
+    amount: 200
+    unit: gr
   - name: Yogurt
-    amount: 1
-    unit: ml
+    amount: 500
+    unit: gr
   - name: Fresh Coriander 
     amount: 1
-    unit: ml
+    unit: tsp
   - name: Vegetable Stock
-    amount: 1
-    unit: ml
+    amount: 28
+    unit: gr
   - name: Cubed Paneer
-    amount: 1
-    unit: ml
+    amount: 200
+    unit: gr
   - name: Chillies
-    amount: 1
-    unit: ml
+    amount: 0.5
+    unit: tsp
   - name: Spinach
-    amount: 1
-    unit: ml
+    amount: 125
+    unit: gr
+  - name: Salt
+    amount: 0.25
+    unit: tsp
 
 steps:
   - step: Cook the vegetables in a little oil, cumin and salt until just a little soft. Set aside
